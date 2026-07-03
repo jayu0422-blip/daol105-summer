@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>다올105 썸머스쿨 | 노래는 불러야 늘고, 성적은 풀어야 오릅니다</title>
+<meta name="description" content="중3~재수생 전 학년 · 국·수·영·과 전 과목 반 개강. 대치동 현장 강사 직강 · 하남 학교 정조준 · 매일 밀착관리. 이미 개강 완료, 선착순 2석." />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/NanumSquareNeo-Variable.css" />
+<style>
+  :root{
+    --ink:#0c1a36;--navy:#15294f;--navy-soft:#213c6c;
+    --gold:#c6a04a;--gold-bright:#e7c56d;--gold-soft:#f1e4bf;
+    --cream:#faf6ee;--cream-2:#f4ecdb;--paper:#ffffff;
+    --text:#1b2440;--muted:#5a6480;--line:#e8dfc9;--danger:#c0392b;--ok:#2f7d4f;
+    --shadow:0 18px 50px -22px rgba(12,26,54,.35);--shadow-sm:0 8px 24px -14px rgba(12,26,54,.28);
+    --serif:"Nanum Myeongjo","Noto Serif KR",serif;
+    --sans:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.72;-webkit-font-smoothing:antialiased;letter-spacing:-.01em;word-break:keep-all;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:900px;margin:0 auto;padding:0 22px}
+  .narrow{max-width:760px;margin-left:auto;margin-right:auto}
+  section{padding:74px 0}
+  .hl{background:linear-gradient(180deg,transparent 58%,var(--gold-soft) 58%);padding:0 .1em;font-weight:800;color:var(--ink)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+  h2.sec{font-size:clamp(26px,5.4vw,40px);font-weight:800;line-height:1.32;color:var(--ink);letter-spacing:-.02em;margin-bottom:14px}
+  .lead{font-size:clamp(16px,2.4vw,18.5px);color:var(--muted);line-height:1.8}
+
+  .ticker{background:var(--ink);color:#fff;font-size:13.5px;font-weight:700;text-align:center;padding:9px 16px;border-bottom:1px solid rgba(231,197,109,.28)}
+  .ticker b{color:var(--gold-bright)}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e64b3c;margin-right:7px;vertical-align:middle;animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(230,75,60,.55)}70%{box-shadow:0 0 0 9px rgba(230,75,60,0)}100%{box-shadow:0 0 0 0 rgba(230,75,60,0)}}
+
+  .hero{position:relative;overflow:hidden;color:#eaf0fb;background:radial-gradient(900px 460px at 78% -8%,rgba(231,197,109,.20),transparent 60%),radial-gradient(700px 500px at 8% 110%,rgba(33,60,108,.55),transparent 55%),linear-gradient(160deg,#0c1a36 0%,#15294f 58%,#1b3160 100%);padding:56px 0 22px}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5;z-index:3}
+  .hero .wrap{position:relative;z-index:2}
+  .hero-faces{position:absolute;inset:0;z-index:0;display:flex;opacity:.15;filter:grayscale(.4) contrast(1.03);pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent,#000 20%,#000 80%,transparent);mask-image:linear-gradient(180deg,transparent,#000 20%,#000 80%,transparent)}
+  .hero-faces .hf{flex:1;background-size:cover;background-position:center 16%}
+  .hero-veil{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(103deg,#0c1a36 14%,rgba(12,26,54,.86) 44%,rgba(12,26,54,.52) 74%,rgba(20,38,74,.42) 100%),radial-gradient(760px 420px at 82% 0%,rgba(231,197,109,.14),transparent 62%)}
+  @media (max-width:720px){.hero-faces{opacity:.11}.hero-veil{background:linear-gradient(160deg,rgba(12,26,54,.72),rgba(12,26,54,.86)),radial-gradient(600px 380px at 80% 0%,rgba(231,197,109,.12),transparent 60%)}}
+  .badge-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
+  .badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;padding:7px 13px;border-radius:999px;border:1px solid rgba(231,197,109,.4);color:var(--gold-bright);background:rgba(231,197,109,.08)}
+  .badge.solid{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+  .hero h1{font-size:clamp(28px,6.6vw,50px);font-weight:800;line-height:1.28;letter-spacing:-.025em;color:#fff;margin-bottom:20px}
+  .hero h1 .q{color:var(--gold-bright)}
+  .hero .sub{font-size:clamp(15.5px,2.5vw,19px);color:#c3cee2;line-height:1.78;max-width:640px;margin-bottom:14px}
+  .hero .sub b{color:#fff}
+  .hero .micro{font-size:13.5px;color:#8ea0c4;margin-bottom:30px}
+  .hero .micro span{color:var(--gold-bright);font-weight:700}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-size:16px;font-weight:800;padding:16px 26px;border-radius:14px;transition:transform .15s ease,box-shadow .2s ease;cursor:pointer;border:none}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink);box-shadow:0 14px 30px -12px rgba(231,197,109,.6)}
+  .btn-gold:hover{transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.06);color:#eaf0fb;border:1px solid rgba(255,255,255,.28)}
+  .btn-ghost:hover{background:rgba(255,255,255,.13)}
+  .hero-team{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:center;width:fit-content;max-width:100%;margin:32px auto 0;padding:0 12px;overflow-x:auto}
+  .hero-team .ht{flex:0 0 auto;width:clamp(92px,13.4vw,176px);line-height:0}
+  .hero-team .ht + .ht{margin-left:clamp(-14px,-1vw,-6px)}
+  .hero-team .ht img{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 20px rgba(0,0,0,.45))}
+  .hero-team::after{content:"";position:absolute;left:8%;right:8%;bottom:2px;height:20px;background:radial-gradient(ellipse at center,rgba(0,0,0,.4),transparent 72%);filter:blur(5px);z-index:-1}
+
+  /* spec cards */
+  .specband{background:var(--paper);border-bottom:1px solid var(--line);padding:30px 0}
+  .specgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .speccard{display:flex;gap:14px;align-items:center;padding:18px 18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,#fbf7ee);box-shadow:var(--shadow-sm)}
+  .spec-ic{flex:none;width:46px;height:46px;border-radius:12px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));display:flex;align-items:center;justify-content:center;font-size:22px}
+  .spec-k{font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:2px}
+  .spec-v{font-size:16px;font-weight:800;color:var(--ink);line-height:1.35}
+  .spec-s{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+  .paper{background:var(--paper)}
+  .cream2{background:var(--cream-2)}
+  .navy-sec{background:linear-gradient(160deg,#0c1a36,#17305c);color:#e8eefb}
+  .navy-sec h2.sec{color:#fff}.navy-sec .lead{color:#b9c6df}
+
+  .story{background:var(--paper);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow);border:1px solid var(--line);position:relative}
+  .story .q-mark{font-family:var(--serif);font-size:64px;color:var(--gold-soft);line-height:.6;position:absolute;top:22px;left:24px}
+  .story p{margin:0 0 15px;font-size:16.5px}.story p:last-child{margin-bottom:0}
+  .say{font-weight:800;color:var(--ink);font-size:18px;display:block;padding:12px 18px;background:var(--cream);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;margin:6px 0 16px}
+
+  .analogy{display:grid;gap:20px;margin-top:26px}
+  .analogy .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow-sm)}
+  .analogy .emo{font-size:34px;margin-bottom:10px}
+  .analogy h3{font-size:20px;font-weight:800;color:var(--ink);margin-bottom:8px}
+  .analogy p{font-size:16px;color:#3a445f}
+  .pull{font-family:var(--serif);font-size:clamp(19px,3vw,26px);line-height:1.6;color:var(--ink);text-align:center;margin:34px auto 0;max-width:640px;font-weight:700}
+  .pull .em{color:var(--gold);border-bottom:2px solid var(--gold-soft)}
+  blockquote.tip{margin-top:26px;background:linear-gradient(180deg,#fff,#fbf7ec);border:1px solid var(--gold-soft);border-left:5px solid var(--gold);border-radius:0 16px 16px 0;padding:24px 26px;font-size:16.5px;color:#33405f;box-shadow:var(--shadow-sm)}
+  blockquote.tip b{color:var(--ink)}
+
+  /* ===== VS compare ===== */
+  .vs-wrap{max-width:840px;margin:30px auto 0}
+  .vs-head{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .vs-team{padding:20px 14px;text-align:center;border-radius:16px}
+  .vs-team.other{background:linear-gradient(160deg,#3a4157,#2c3244);color:#e7e9ef}
+  .vs-team.daol{background:linear-gradient(160deg,#15294f,#213c6c);color:#fff;box-shadow:0 12px 30px -16px rgba(21,41,79,.7);border:1px solid rgba(231,197,109,.4)}
+  .vt-cap{font-size:clamp(15px,3.4vw,18px);font-weight:800;line-height:1.3}
+  .vs-team.daol .vt-cap{color:var(--gold-bright)}
+  .vt-sub{font-size:12px;opacity:.82;margin-top:4px}
+  .vs-badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,var(--gold-bright),var(--gold));color:var(--ink);font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.28);z-index:3}
+  .vs-body{margin-top:6px}
+  .vsrow{margin-top:2px}
+  .vs-crit{text-align:center;font-size:12px;font-weight:800;color:var(--navy-soft);letter-spacing:.06em;margin:16px 0 8px;text-transform:uppercase}
+  .vs-cells{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .vc{border-radius:12px;padding:14px 15px;font-size:14.5px;line-height:1.5}
+  .vc.other{background:#f2f1f4;color:#6d7488;border:1px solid #e6e5ea}
+  .vc.other .x{color:var(--danger);font-weight:900;margin-right:6px}
+  .vc.daol{background:linear-gradient(180deg,#fbf6e7,#f6edd6);border:1px solid var(--gold-soft);color:#2b2f42}
+  .vc.daol .v{color:var(--ok);font-weight:900;margin-right:6px}
+  .vc.daol b{color:var(--ink);font-weight:800}
+  .vs-concl{margin-top:20px;text-align:center;background:linear-gradient(160deg,#0c1a36,#1b3160);color:#fff;border-radius:16px;padding:22px 20px}
+  .vs-concl .big{font-size:clamp(17px,3.6vw,22px);font-weight:800}
+  .vs-concl .big .g{color:var(--gold-bright)}
+  .vs-concl .small{font-size:13.5px;color:#b9c6df;margin-top:6px}
+  .compare-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6}
+  .points{margin-top:30px;display:grid;gap:14px}
+  .pt{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow-sm)}
+  .pt h4{font-size:17.5px;color:var(--ink);font-weight:800;margin-bottom:6px}
+  .pt h4 .n{color:var(--gold);font-family:var(--serif);margin-right:8px}
+  .pt p{font-size:15.5px;color:#3d4763}.pt p b{color:var(--ink)}
+
+  .diffs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+  .diff{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .2s ease}
+  .diff:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .diff::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .diff .num{font-family:var(--serif);font-size:30px;font-weight:800;color:var(--gold);line-height:1;display:inline-block;margin-bottom:12px}
+  .diff h3{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:9px;line-height:1.4}
+  .diff p{font-size:15px;color:#3d4763;line-height:1.7}.diff p b{color:var(--navy-soft)}
+  .diff.wide{grid-column:1 / -1}
+
+  /* team */
+  .team-intro{text-align:center}
+  .team-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+  .team-tags span{font-size:12.5px;font-weight:800;color:#8a6a1e;background:var(--gold-soft);padding:6px 12px;border-radius:999px}
+  .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:16px;margin-top:32px}
+  .member{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .18s ease,box-shadow .2s ease}
+  .member:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .photo-wrap{position:relative;aspect-ratio:3/4;background:linear-gradient(160deg,#e2e7f1,#eef2f8);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+  .photo-wrap .ph{color:#9aa6bf;font-size:12.5px;font-weight:700;text-align:center;padding:10px;z-index:0}
+  .photo-wrap .ph .sil{font-size:38px;display:block;margin-bottom:4px;opacity:.55}
+  .m-body{padding:15px 14px 17px;text-align:center}
+  .m-role{display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:linear-gradient(160deg,var(--navy-soft),var(--navy));padding:3px 10px;border-radius:999px;margin-bottom:8px}
+  .m-role.head{background:linear-gradient(160deg,var(--gold),#b98f2e)}
+  .m-name{font-size:17px;font-weight:800;color:var(--ink)}
+  .m-name span{font-size:13px;color:var(--muted);font-weight:600}
+  .m-cred{font-size:12.5px;color:#586178;line-height:1.55;margin-top:7px}
+  .pill{display:inline-block;background:var(--gold-soft);color:#8a6a1e;font-size:11px;font-weight:800;padding:1px 7px;border-radius:6px;margin:3px 2px 0}
+  .pill.hot{background:linear-gradient(160deg,#15294f,#213c6c);color:var(--gold-bright)}
+  .team-foot{text-align:center;font-size:13px;color:var(--muted);margin-top:18px}
+  .lineup-band{background:linear-gradient(160deg,#0c1a36,#17305c);border:1px solid rgba(231,197,109,.28);border-radius:20px;padding:26px 16px 20px;margin-top:30px;box-shadow:var(--shadow)}
+  .lineup-title{text-align:center;color:#fff;font-weight:800;font-size:clamp(17px,3.6vw,22px)}
+  .lineup-title .g{color:var(--gold-bright)}
+  .lineup-sub{text-align:center;color:#93a2c4;font-size:13px;margin:5px 0 20px}
+  .lineup{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;width:fit-content;max-width:100%;margin:0 auto;scroll-snap-type:x proximity}
+  .lineup::-webkit-scrollbar{height:6px}
+  .lineup::-webkit-scrollbar-thumb{background:rgba(231,197,109,.4);border-radius:99px}
+  .lu{flex:0 0 auto;width:112px;scroll-snap-align:center}
+  .lu .luimg{position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:linear-gradient(160deg,#26365c,#1a2846);border:1px solid rgba(231,197,109,.35);box-shadow:0 12px 26px -16px rgba(0,0,0,.7);transition:transform .2s ease}
+  .lu:hover .luimg{transform:translateY(-5px)}
+  .lu .luimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+  .lu .luimg .lph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#7f8cad;font-size:11px;font-weight:700}
+  .lu .luname{text-align:center;color:#fff;font-weight:800;font-size:13.5px;margin-top:9px}
+  .lu .lurole{text-align:center;color:var(--gold-bright);font-size:11.5px;font-weight:700;margin-top:1px}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+  .stat{background:rgba(255,255,255,.05);border:1px solid rgba(231,197,109,.28);border-radius:16px;padding:24px 14px;text-align:center}
+  .stat .big{font-size:clamp(30px,6vw,44px);font-weight:800;color:var(--gold-bright);line-height:1;letter-spacing:-.02em}
+  .stat .big .u{font-size:.5em;font-weight:700;margin-left:2px}
+  .stat .cap{font-size:13.5px;color:#c3cee2;margin-top:9px;font-weight:600;line-height:1.45}
+  .stat-note{text-align:center;font-size:13px;color:#8ea0c4;margin-top:16px}
+  .cases{display:grid;gap:14px;margin-top:30px}
+  .case{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow-sm)}
+  .case .who{font-size:14px;font-weight:800;color:var(--navy-soft);margin-bottom:10px}
+  .case .who .pill{background:var(--cream-2);color:var(--muted);font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;margin-left:8px}
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-weight:800;font-size:15px}
+  .grade{background:var(--cream);border:1px solid var(--line);border-radius:9px;padding:6px 12px;color:var(--muted)}
+  .grade.up{background:linear-gradient(180deg,#fbf6e7,#f6edd6);border-color:var(--gold-soft);color:var(--ink)}
+  .arw{color:var(--gold);font-weight:900}
+  .case .note{font-size:14.5px;color:#3d4763;margin-top:12px}.case .note b{color:var(--ink)}
+  .case .review{font-style:italic;color:var(--navy-soft)}
+
+  .urgency{text-align:center}
+  .urgency .seat{font-size:clamp(40px,11vw,86px);font-weight:800;color:var(--gold-bright);line-height:1;letter-spacing:-.03em;margin:10px 0 4px}
+  .urgency .seat .two{display:inline-block;animation:beat 1.6s ease-in-out infinite}
+  @keyframes beat{0%,100%{transform:scale(1)}45%{transform:scale(1.12)}}
+  .urgency .seat small{font-size:.3em;font-weight:700;color:#c3cee2;display:block;margin-top:6px}
+  .urgency p{color:#c3cee2;font-size:16.5px;max-width:600px;margin:18px auto 0}.urgency p b{color:#fff}
+
+  .cost{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px;align-items:stretch}
+  .price{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;justify-content:center}
+  .price.hi{background:linear-gradient(165deg,#15294f,#213c6c);color:#eaf0fb;border-color:var(--navy-soft)}
+  .price .p-cap{font-size:14px;font-weight:800;color:var(--muted)}.price.hi .p-cap{color:var(--gold-bright)}
+  .price .amt{font-size:clamp(26px,5.4vw,36px);font-weight:800;color:var(--ink);margin:8px 0 4px;letter-spacing:-.02em}
+  .price .p-sub{font-size:14px;color:var(--muted)}.price.hi .p-sub{color:#b9c6df}
+  .price .strike{text-decoration:line-through;opacity:.6;font-weight:700}
+  .price .rowline{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:9px 0;border-top:1px dashed rgba(255,255,255,.18)}
+  .price .rowline:first-of-type{border-top:none}
+  .price .rowline .rl{font-size:14px;color:#c3cee2;font-weight:700}
+  .price .rowline .rv{font-size:16.5px;font-weight:800;color:#fff;white-space:nowrap}
+  .price .rowline .rv .was{color:#8ea0c4;text-decoration:line-through;font-weight:600;font-size:13.5px;margin-right:6px}
+
+  .faq{margin-top:30px;display:grid;gap:12px}
+  details.qa{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  details.qa summary{list-style:none;cursor:pointer;padding:20px 22px;font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary .qmk{color:var(--gold);font-family:var(--serif);font-size:20px;flex:none}
+  details.qa summary .chev{margin-left:auto;color:var(--gold);transition:transform .2s;flex:none;font-size:18px}
+  details.qa[open] summary{background:var(--cream)}
+  details.qa[open] summary .chev{transform:rotate(180deg)}
+  details.qa .a{padding:2px 22px 22px 54px;font-size:15.5px;color:#3d4763;line-height:1.75}
+  details.qa .a b{color:var(--ink)}
+
+  .final{text-align:center}
+  .final .pull{color:#fff}.final .pull .em{color:var(--gold-bright);border-color:rgba(231,197,109,.5)}
+  .contact-card{background:rgba(255,255,255,.05);border:1px solid rgba(231,197,109,.3);border-radius:20px;padding:34px 26px;margin-top:34px}
+  .phones{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:6px 0 16px}
+  .phone{display:inline-flex;align-items:center;gap:10px;font-size:clamp(19px,4vw,25px);font-weight:800;padding:16px 26px;border-radius:14px;background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink);box-shadow:0 14px 30px -14px rgba(231,197,109,.6);transition:transform .15s}
+  .phone.line{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.3);box-shadow:none}
+  .phone:hover{transform:translateY(-2px)}
+  .map-btn{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:800;padding:12px 22px;border-radius:12px;background:#03c75a;color:#fff;box-shadow:0 12px 26px -14px rgba(3,199,90,.7);transition:transform .15s}
+  .map-btn:hover{transform:translateY(-2px)}
+  .final .addr{color:#b9c6df;font-size:15.5px;line-height:1.8;margin-top:4px}
+  .final .addr a{color:#eaf0fb;border-bottom:1px dotted rgba(231,197,109,.6)}
+  .final .addr .tags{color:var(--gold-bright);font-weight:700;font-size:14px;display:block;margin-top:6px}
+  .final .hours{color:#8ea0c4;font-size:14px;margin-top:12px}
+  footer{background:var(--ink);color:#7f8bab;text-align:center;font-size:13px;padding:26px 20px 96px}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px 12px;background:rgba(12,26,54,.96);backdrop-filter:blur(8px);border-top:1px solid rgba(231,197,109,.32)}
+  .sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;padding:14px;border-radius:12px;font-size:15px}
+  .sticky .call{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink)}
+  .sticky .mapx{background:#03c75a;color:#fff;flex:none;padding:14px 18px}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:720px){
+    section{padding:56px 0}
+    .diffs{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr 1fr;gap:10px}
+    .cost{grid-template-columns:1fr}
+    .specgrid{grid-template-columns:1fr 1fr}
+    .team{grid-template-columns:1fr 1fr}
+    .sticky{display:flex}
+    .hero{padding:46px 0 56px}
+    .story{padding:30px 22px}
+    .vc{font-size:13px;padding:12px 12px}
+    .vs-crit{font-size:11px}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ticker"><span class="dot"></span>이미 <b>개강 완료</b> · 여름 등록 <b>선착순 2석</b> 남음 — 채워지면 마감됩니다</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge solid">2026 다올105 썸머스쿨</span>
+      <span class="badge">중3 ~ 재수생 전 학년</span>
+      <span class="badge">국·수·영·과 전 과목 반 개강</span>
+      <span class="badge">대치동 현장 강사 직강</span>
+    </div>
+    <h1>학원을 세 곳이나 다니는데,<br /><span class="q">왜 9월 성적표는 그대로일까요?</span></h1>
+    <p class="sub"><b>특강만 잔뜩 듣고 온 여름</b>과 <b>직접 풀어낸 여름</b>은,<br />9월에 등급으로 갈립니다.</p>
+    <p class="micro">🎵 노래는 <span>불러야</span> 늘고, 성적은 <span>풀어야</span> 오릅니다.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="tel:031-699-8111">☎ 지금 남은 2석 확인 (031-699-8111)</a>
+      <a class="btn btn-ghost" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 네이버 지도 · 오시는 길</a>
+    </div>
+  </div>
+  <div class="hero-team" aria-hidden="true">
+    <div class="ht"><img src="img/hero/teacher-5.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-3.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-1.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-4.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-2.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-7.png" alt="" loading="lazy"></div>
+    <div class="ht"><img src="img/hero/teacher-6.png" alt="" loading="lazy"></div>
+  </div>
+</header>
+
+<!-- SPEC CARDS -->
+<section class="specband">
+  <div class="wrap">
+    <div class="specgrid">
+      <div class="speccard"><div class="spec-ic">🎓</div><div><div class="spec-k">대상</div><div class="spec-v">중3 ~ 재수생</div><div class="spec-s">전 학년 수강 가능</div></div></div>
+      <div class="speccard"><div class="spec-ic">📚</div><div><div class="spec-k">개설 과목</div><div class="spec-v">국어·수학·영어·과학</div><div class="spec-s">전 학년 반 개강</div></div></div>
+      <div class="speccard"><div class="spec-ic">🧑‍🏫</div><div><div class="spec-k">수업</div><div class="spec-v">대치동 현장 강사 직강</div><div class="spec-s">내신 ~ 수능 커버</div></div></div>
+      <div class="speccard"><div class="spec-ic">🔴</div><div><div class="spec-k">현황</div><div class="spec-v">이미 개강 완료</div><div class="spec-s">선착순 2석</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">방학은 다르다</p>
+    <h2 class="sec">"학기 중엔 정신없지만,<br />방학은 다르다."</h2>
+    <p class="lead">방학 안내 브로슈어에서 흔히 보는 이 문장, 백번 옳습니다. 학기 중엔 다 같은 진도, 다 같은 시험. 그래서 <b style="color:var(--ink)">방학은 격차가 벌어지는 유일한 구간</b>이죠.<br /><br />
+    문제는 '방학이 다르다'가 아닙니다. <span class="hl">"어디서, 어떻게 다르게 쓰느냐"</span>입니다. 그리고 바로 그 지점에서, 대형학원 시스템은 학부모님이 기대하시는 것과 정반대로 움직이곤 합니다.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="cream2">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">한 어머니의 이야기</p>
+    <div class="story">
+      <span class="q-mark">&ldquo;</span>
+      <p style="padding-top:8px">방학이 시작되고, 어머니는 마음이 급했습니다. "남들 다 간다는 곳"으로 아이를 보냈습니다. 왕복 두 시간, <b>송파·대치의 대형 재종 썸머스쿨.</b> 국어 특강, 수학 특강, 사탐 특강… 시간표는 화려하게 꽉 찼습니다.</p>
+      <p>한 달 뒤, 어머니가 물었습니다.</p>
+      <span class="say">"아들, 이번에 좀 늘었어?"</span>
+      <p>아이는 잠시 머뭇거리다 말했습니다.</p>
+      <span class="say">"글쎄… 수업은 되게 많이 들었는데… 문제 풀 시간은 없었어."</span>
+      <p>비싼 돈, 긴 이동 시간, 아이의 소중한 방학. 그런데 손에 쥔 건 <b>'많이 봤다'는 느낌</b>뿐, 성적표의 숫자는 그대로였습니다.</p>
+      <p style="color:var(--navy-soft);font-weight:700">이 장면, 혹시 지금 우리 집 이야기 같으신가요?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ANALOGY -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">왜 이런 일이 생길까요</p>
+    <h2 class="sec">🎤 '노래 레슨' 이야기</h2>
+    <p class="lead">한 아이가 노래를 배우러 갔습니다. 보컬 트레이너는 완벽했습니다. 어려운 고음을 시원하게 뽑고, 감정을 담아 한 곡을 불러줍니다. 아이는 넋을 놓고 감탄했습니다. <b style="color:var(--ink)">"우와, 선생님 진짜 잘한다…!"</b></p>
+    <div class="analogy">
+      <div class="card"><div class="emo">🎧</div><h3>그런데 정작 아이는…</h3><p>그날 <b>단 한 소절도 직접 부르지 못했습니다.</b> 한 달을 다녀도, 두 달을 다녀도 매번 선생님의 완벽한 노래를 감상하고 돌아올 뿐. 아이의 실력은 처음 그대로였습니다.</p></div>
+      <div class="card"><div class="emo">🎵</div><h3>노래는 '내가 불러야' 는다</h3><p>아무리 멋진 시범을 백 번 들어도, 내 목으로 소리를 내보지 않으면 실력은 1mm도 자라지 않습니다. <b>헬스 PT도 마찬가지</b>죠 — 트레이너 시범만 보고 바벨을 안 잡으면, 근육은 붙지 않습니다.</p></div>
+    </div>
+    <blockquote class="tip"><b>특강은 화려한 '시범'입니다.</b> 스타 강사의 명강의를 아무리 많이 시청해도, 정작 <b>내 아이가 직접 풀고·틀리고·고치는 '연습'</b>이 없으면 — 성적은 노래 못 부르고 돌아온 그 아이처럼, 제자리입니다.</blockquote>
+    <p class="pull">그런데 지금, 수많은 아이들이<br /><span class="em">바로 그 방식으로</span> 방학을 보내고 있습니다.</p>
+  </div>
+</section>
+
+<!-- 특강 쇼핑 -->
+<section class="cream2">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">특강 쇼핑의 함정</p>
+    <h2 class="sec">🛒 장바구니는 가득,<br />실력은 제자리</h2>
+    <p class="lead">대형학원 브로슈어를 펼치면 특강·단과 목록이 화려하게 펼쳐집니다. 부모 마음은 조급해집니다.
+    <span style="display:block;margin:14px 0;padding:14px 18px;background:#fff;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-weight:700;color:var(--navy-soft)">"이 특강도 좋다던데, 저 단과도 안 들으면 뒤처질 것 같고…"</span>
+    그렇게 하나둘 담다 보면, 아이의 하루는 <b style="color:var(--ink)">'수업 시청'으로 꽉 찹니다.</b></p>
+    <p class="pull" style="margin-top:26px">그 많은 강의를 다 듣고 난 뒤,<br />아이가 스스로 <span class="em">문제를 풀 시간</span>은 언제인가요?</p>
+    <p class="lead" style="text-align:center;margin-top:22px">인풋(수업)만 넘치고, 체화하는 <b style="color:var(--ink)">'연습 시간(자습)'이 증발합니다.</b><br /><b style="color:var(--ink)">성적은 아이가 문제를 직접 풀 때 오릅니다. 강의를 볼 때가 아니라.</b></p>
+  </div>
+</section>
+
+<!-- VS COMPARE -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">결제 버튼을 누르기 전, 딱 3분만</p>
+      <h2 class="sec">🥊 한눈에 비교<br />송파·대치 대형학원 vs 다올105</h2>
+      <p class="lead">수백만 원짜리 카드를 긁기 전에, <b style="color:var(--ink)">공개된 사실</b>로만 냉정하게.</p>
+    </div>
+
+    <div class="vs-wrap">
+      <div class="vs-head">
+        <div class="vs-team other"><div class="vt-cap">송파·대치 대형학원</div><div class="vt-sub">관리형 독서실 · 썸머스쿨</div></div>
+        <div class="vs-team daol"><div class="vt-cap">다올105</div><div class="vt-sub">하남미사 입시 전문</div></div>
+        <div class="vs-badge">VS</div>
+      </div>
+      <div class="vs-body">
+        <div class="vsrow"><div class="vs-crit">점검 주기</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>주 1회 '주간' 플래너 점검</div>
+          <div class="vc daol"><span class="v">✓</span><b>매일</b> 담임 검사 + <b>당일</b> 피드백</div></div></div>
+        <div class="vsrow"><div class="vs-crit">강사진</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>인강(온·오프) 강사 중심</div>
+          <div class="vc daol"><span class="v">✓</span><b>대치동 현장 강사</b> 직강 (前 시대인재·메가 러셀 출신)</div></div></div>
+        <div class="vsrow"><div class="vs-crit">내신 대비</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>특정 지역 최상위권에 초점</div>
+          <div class="vc daol"><span class="v">✓</span><b>하남 학교 문항 단위 분석</b> · 동형 모의고사 자체 제작</div></div></div>
+        <div class="vsrow"><div class="vs-crit">개설 · 수강 구조</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>단과·특강 다수 추가 → 인풋 과잉</div>
+          <div class="vc daol"><span class="v">✓</span><b>중3~재수생 전 학년 · 국·수·영·과 반</b> + 자습 시간 확보</div></div></div>
+        <div class="vsrow"><div class="vs-crit">이동</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>왕복 약 1시간 30분 ~ 2시간+</div>
+          <div class="vc daol"><span class="v">✓</span><b>하남미사 현장</b> (통학 시간 0)</div></div></div>
+        <div class="vsrow"><div class="vs-crit">비용</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>4주 종합반 132만 원 + 예약금 + 자습관 별도</div>
+          <div class="vc daol"><span class="v">✓</span>방학 <b>59만→최대 39만</b> · 학기중 <b>39만→최대 19만</b></div></div></div>
+        <div class="vsrow"><div class="vs-crit">개강</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>7월 18일 — 아직 시작도 안 함</div>
+          <div class="vc daol"><span class="v">✓</span><b>이미 개강 완료</b> (한 발 앞서 출발)</div></div></div>
+      </div>
+      <div class="vs-concl">
+        <div class="big">결론 — <span class="g">'많이 본 여름'</span> vs <span class="g">'직접 푼 여름'</span></div>
+        <div class="small">9월 성적표는, 아이가 강의를 얼마나 봤느냐가 아니라 문제를 얼마나 풀었느냐로 갈립니다.</div>
+      </div>
+    </div>
+    <p class="compare-note narrow">※ 대형학원 정보는 공개 브로슈어 기준이며, 상품 구성(종합반 vs 자습관)이 서로 달라 단순 금액 비교가 아닌 참고용입니다.</p>
+
+    <div class="points narrow">
+      <div class="pt"><h4><span class="n">①</span>'주간' 점검, 다시 읽어보셨나요?</h4><p>월요일에 계획이 어긋나면 다음 점검은 <b>일주일 뒤</b>. 그사이 아이가 어디서 막혔는지 <b>엿새 동안 아무도 모릅니다.</b> 방학은 하루가 한 학기입니다.</p></div>
+      <div class="pt"><h4><span class="n">②</span>강사는 인강 강사 중심</h4><p>화면으로 보던 그 스타 강사, 좋습니다. 하지만 <b>대치동 현장 강사가 우리 아이 교실에 직접 들어오는 구조</b>와는 다릅니다.</p></div>
+      <div class="pt"><h4><span class="n">③</span>우리 아이는 '하남 학교'에 다닙니다</h4><p>대형학원 초점은 자기 지역 최상위권과 전국 수능에. 그런데 <b>우리 아이가 실제로 치를 시험은 하남에서 출제됩니다.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFS -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">그래서, 다올105는 다르게 합니다</p>
+      <h2 class="sec">대형학원이 놓친 것들을<br />하남미사에서 정확히 채웁니다</h2>
+    </div>
+    <div class="diffs">
+      <div class="diff"><span class="num">1</span><h3>특강 과잉이 아니라 '균형'</h3><p><b>중3부터 재수생까지 전 학년</b>, 국어·수학·영어·과학 반이 <b>모두 개강</b>되어 있습니다. 인풋으로만 배 채우지 않고, 아이가 <b>직접 풀고·틀리고·고치는 자습 시간</b>을 반드시 확보합니다. 🎵 직접 부를 시간을 지켜드립니다.</p></div>
+      <div class="diff"><span class="num">2</span><h3>대치동 '현장 강사' 직강</h3><p>인강 화면 속 강사가 아닙니다. <b>대치동에서 실제로 강의하는 현장 강사가 하남으로 직접</b> 옵니다. 내신에서 멈추지 않고 <b>수능까지</b> 하나의 흐름으로 커버합니다.</p></div>
+      <div class="diff"><span class="num">3</span><h3>'하남 학교'를 문항 단위로 분석</h3><p>하남 각 학교의 내신 출제 성향을 <b>문항 하나하나 단위로 분석</b>하고 <b>학교별 동형 모의고사를 자체 제작</b>. 우리 아이가 실제로 보는 그 시험에 정조준합니다.</p></div>
+      <div class="diff"><span class="num">4</span><h3>'형식'이 아니라 '실질' 담임</h3><p>주 1회가 아닙니다. <b>소수 전담 담임이 매일 플래너를 검사하고 그날 바로 피드백.</b> 월요일에 막히면 월요일에 잡아드립니다. <b>대치 원서 컨설턴트 상주</b>로 입시 설계까지.</p></div>
+      <div class="diff wide"><span class="num">5</span><h3>휴대폰 없는 몰입 환경</h3><p>입실 → <b>휴대폰 의무 제출(예외 없음)</b> → 플래너 작성 → 학습 시작. 지정좌석, 벌점 누적 시 퇴관(3회 경고 후 학생·학부모 면담, 5회 경고 시 퇴관). "관리한다"는 말이 아니라, 아이가 실제로 <b>오래 몰입하게 만드는 구조</b>입니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow team-intro">
+      <p class="eyebrow" style="justify-content:center">다올105를 만드는 사람들</p>
+      <h2 class="sec">🧑‍🏫 대치권 실력파가<br />하남으로 왔습니다</h2>
+      <p class="lead">화면 속 인강 강사가 아닙니다. 실제로 아이 곁에서 <b style="color:var(--ink)">가르치고, 매일 관리하는</b> 사람들입니다.</p>
+      <div class="team-tags"><span>SKY·주요대 출신</span><span>대치권 현장 강사진</span><span>국·수·영·과 전임</span><span>입시 전담 컨설턴트</span></div>
+    </div>
+    <!-- 강사 라인업 (도입부: 왼→오 나열) -->
+    <div class="lineup-band">
+      <div class="lineup-title">다올105 썸머스쿨 <span class="g">강사진</span></div>
+      <div class="lineup-sub">중3 ~ 재수생 · 국·수·영·과 전 과목을 책임지는 얼굴들</div>
+      <div class="lineup">
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-5.jpg" alt="김영하 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">김영하</div><div class="lurole">국어 · 원장</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-3.jpg" alt="황웅 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">황웅</div><div class="lurole">영어</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-1.jpg" alt="민귀홍 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">민귀홍</div><div class="lurole">영어</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-4.jpg" alt="임결 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">임결</div><div class="lurole">수학 · 원장</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-2.jpg" alt="유용권 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">유용권</div><div class="lurole">수학</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-7.jpg" alt="정영주 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">정영주</div><div class="lurole">입시컨설턴트</div></div>
+        <div class="lu"><div class="luimg"><span class="lph"><span style="font-size:26px">👤</span>준비중</span><img src="img/teacher-6.jpg" alt="윤재영 대표원장" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="luname">윤재영</div><div class="lurole">대표원장</div></div>
+      </div>
+    </div>
+    <!-- 상세 카드 (라인업과 동일 순서) -->
+    <div class="team">
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-5.jpg" alt="김영하 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">국어 · 원장</span><div class="m-name">김영하 <span>선생님</span></div><div class="m-cred"><b>이화여자대학교</b><br />다올105 국어 원장 · 밀크T국어 온라인</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-3.jpg" alt="황웅 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">영어</span><div class="m-name">황웅 <span>선생님</span></div><div class="m-cred"><b>한양대학교</b><br />대성 스타강사 코리아</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-1.jpg" alt="민귀홍 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">영어</span><div class="m-name">민귀홍 <span>선생님</span></div><div class="m-cred"><b>한양대학교</b><br />영어영문학</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-4.jpg" alt="임결 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">수학 · 원장</span><div class="m-name">임결 <span>선생님</span></div><div class="m-cred"><b>연세대학교</b><br />다올105 수학과 원장 · 前 시대인재 수학</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-2.jpg" alt="유용권 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">수학</span><div class="m-name">유용권 <span>선생님</span></div><div class="m-cred"><b>경희대학교 수학과</b><br />다올105 중·고등 전임</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-7.jpg" alt="정영주 선생님" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">입시컨설턴트</span><div class="m-name">정영주 <span>선생님</span></div><div class="m-cred"><b>수시·정시 입시컨설턴트</b><br />관리형 독서실 담임 · 파인만 입시컨설턴트</div></div></div>
+      <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-6.jpg" alt="윤재영 대표원장" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">대표원장</span><div class="m-name">윤재영 <span>대표원장</span></div><div class="m-cred"><b>다올105 대표원장</b><br />前 메가스터디 러셀 영어 · 前 형설학원 고등부 팀장</div></div></div>
+    </div>
+    <p class="team-foot narrow">※ 사진을 교체하려면 <b>img</b> 폴더의 teacher-1~7 파일을 바꾸면 됩니다.</p>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="navy-sec">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">말이 아니라, 숫자와 사례로</p>
+      <h2 class="sec">의치한약 · SKY를<br />매해 배출해온 학원입니다</h2>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="big"><span class="cnt" data-to="1.8" data-dec="1">0</span><span class="u">등급</span></div><div class="cap">재원생 평균<br />내신 향상</div></div>
+      <div class="stat"><div class="big"><span class="cnt" data-to="340">0</span><span class="u">%</span></div><div class="cap">3개월+ 재원생<br />학습시간 증가율</div></div>
+      <div class="stat"><div class="big"><span class="cnt" data-to="98">0</span><span class="u">%</span></div><div class="cap">학부모<br />만족도</div></div>
+      <div class="stat"><div class="big"><span class="cnt" data-to="7">0</span><span class="u">%</span></div><div class="cap">실제 퇴관율<br />(한번 오면 계속)</div></div>
+    </div>
+    <p class="stat-note">※ 자체 집계 기준</p>
+    <div class="cases narrow">
+      <div class="case"><div class="who">하남 X고 2학년 김OO <span class="pill">6개월</span></div><div class="flow"><span class="grade">내신 4.2등급 · 1.5h</span><span class="arw">➜</span><span class="grade up">2.1등급 · 5.2h</span></div><p class="note review">"휴대폰 없이도 6시간을 집중하는 게 놀라웠어요." <span style="font-style:normal;color:var(--muted)">(한 학생의 사례)</span></p></div>
+      <div class="case"><div class="who">미X고 3학년 장O석 <span class="pill">영어·국어만 수강</span></div><div class="flow"><span class="grade">4월 4등급</span><span class="arw">➜</span><span class="grade">6월 3등급</span><span class="arw">➜</span><span class="grade up">9월 1등급</span></div><p class="note">두 과목만 들었는데 <b>두 과목 모두 향상</b>. 실력은 강의 개수가 아니라 <b>내가 직접 푼 양</b>에서 나온다는 증거입니다.</p></div>
+      <div class="case"><div class="who">남X고 재수생 한O우 <span class="pill">2025 경희대 합격</span></div><div class="flow"><span class="grade">3월 4등급</span><span class="arw">➜</span><span class="grade">6월 3등급</span><span class="arw">➜</span><span class="grade up">9월 1~2등급</span></div><p class="note">숫자가 이렇게 나오는 이유는 단순합니다. <b>아이가 이곳에서 '직접 풀기' 때문입니다.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<section class="navy-sec" style="background:linear-gradient(160deg,#0a1730,#122a52)">
+  <div class="wrap narrow urgency reveal">
+    <p class="eyebrow" style="justify-content:center">딱 하나 문제가 있습니다</p>
+    <h2 class="sec" style="margin-bottom:6px">자리가 없습니다</h2>
+    <p style="max-width:560px;margin:0 auto">남들이 7월 18일 개강 브로슈어를 이제 막 펼쳐볼 때, <b>우리 아이들은 이미 자습실에서 오늘 분량을 풀고 있습니다.</b> 한 발 앞서 출발했다는 뜻입니다.</p>
+    <div class="seat">선착순 <span class="two">2</span>석<small>이 2석이 채워지면 이번 여름 등록은 마감됩니다</small></div>
+    <p><b>방학은 하루가 한 학기입니다.</b><br />"조금 더 알아볼게요" 하며 일주일을 더 쓰시는 사이, 아이는 그만큼 뒤에서 출발합니다. 그리고 아이의 이번 방학은 다시 돌아오지 않습니다.</p>
+    <div class="cta-row" style="justify-content:center;margin-top:26px"><a class="btn btn-gold" href="tel:031-699-8111">☎ 남은 2석 지금 확인</a></div>
+  </div>
+</section>
+
+<!-- COST -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">비용도 투명하게</p>
+    <h2 class="sec">어느 쪽이 성적표를<br />바꿀지, 이미 아십니다</h2>
+    <div class="cost">
+      <div class="price">
+        <div class="p-cap">송파·대치 대형학원</div>
+        <div class="amt strike">132만 원 +</div>
+        <div class="p-sub">4주 종합반 + 예약금 + 자습관 별도<br />＋ 왕복 2시간 이동</div>
+      </div>
+      <div class="price hi">
+        <div class="p-cap">다올105 썸머스쿨</div>
+        <div class="rowline"><span class="rl">📅 방학 (7·8월)</span><span class="rv"><span class="was">59만</span>최대 39만 원</span></div>
+        <div class="rowline"><span class="rl">📚 학기중</span><span class="rv"><span class="was">39만</span>최대 19만 원</span></div>
+        <div class="p-sub" style="margin-top:10px">자습관 기준 · <b style="color:var(--gold-bright)">교과목 수강 시 과목당 5만 원 할인</b><br />하남미사 현장 · 매일 관리 · 우리 학교 정조준</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="cream2">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">자주 묻는 질문</p>
+    <h2 class="sec">FAQ</h2>
+    <div class="faq">
+      <details class="qa"><summary><span class="qmk">Q</span>몇 학년까지 다닐 수 있나요? 어떤 과목이 열려 있나요?<span class="chev">⌄</span></summary><div class="a"><b>중3부터 재수생까지 전 학년</b>이 수강 가능하며, 전 학년 모두 <b>국어·수학·영어·과학 반이 개강</b>되어 있습니다. 필요한 과목을 균형 있게 들으면서 자습 시간까지 확보합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>이미 개강했는데 지금 들어가도 따라갈 수 있나요?<span class="chev">⌄</span></summary><div class="a">네. 소수 전담이라 담임이 <b>첫날부터 개별 진도를 파악해 맞춰</b> 드립니다. 오히려 '아직 개강도 안 한' 대형학원보다 <b>이미 앞서 출발</b>하시는 셈입니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>특강을 많이 안 듣는 게 불안한데요.<span class="chev">⌄</span></summary><div class="a">그 불안이 바로 <b>'특강 쇼핑'의 함정</b>입니다. 수업을 많이 보는 것과 성적이 오르는 것은 다릅니다. 위 사례의 장O석 학생은 <b>두 과목만 듣고 1등급</b>을 받았습니다. 실력은 강의 개수가 아니라 '내가 푼 양'에서 나옵니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>정말 대치동 강사가 오나요?<span class="chev">⌄</span></summary><div class="a">네. 인강 강사가 아니라 <b>대치동에서 실제로 강의하는 현장 강사가 하남으로 직접 와 직강</b>합니다. 대치권에서 실제로 가르쳐 온 실력파 강사진이 내신부터 수능까지 커버합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>우리 아이 학교 내신도 대비되나요?<span class="chev">⌄</span></summary><div class="a">다올105의 핵심 강점입니다. 하남 각 학교 출제 성향을 <b>문항 단위로 분석</b>하고 <b>학교별 동형 모의고사를 자체 제작</b>해 대비합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>우리 아이는 휴대폰 없이 못 버텨요.<span class="chev">⌄</span></summary><div class="a">거의 모든 학부모님이 그렇게 말씀하십니다. 그런데 입실 후 휴대폰을 제출하고 지정좌석에 앉으면 <b>대부분 일주일 안에 적응</b>합니다. 규칙은 분명하지만(휴대폰 제출·지정좌석·경고 누적), 그 구조 덕분에 몰입하는 습관이 만들어집니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>지금 등록하면 늦지 않나요?<span class="chev">⌄</span></summary><div class="a">늦기는커녕 <b>이미 앞서 있습니다.</b> 저희는 개강을 마쳤고, 대형학원은 7월 18일에야 시작합니다. 다만 <b>남은 자리는 2석</b>뿐입니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="navy-sec final" id="contact">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow" style="justify-content:center">지금, 남은 2석을 확인하세요</p>
+    <p class="pull">이번 방학을 <span class="em">'많이 보기만 한 방학'</span>이 아니라<br /><span class="em">'직접 풀어낸 방학'</span>으로 만들어 주세요.</p>
+    <div class="contact-card">
+      <div style="font-size:15px;color:#b9c6df;font-weight:700;margin-bottom:4px">🎵 노래는 불러야 늘고, 성적은 풀어야 오릅니다</div>
+      <div class="phones">
+        <a class="phone" href="tel:031-699-8111">☎ 031-699-8111</a>
+        <a class="phone line" href="tel:010-8337-8158">📱 010-8337-8158</a>
+      </div>
+      <div style="margin:2px 0 18px"><a class="map-btn" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 네이버 지도로 길찾기</a></div>
+      <p class="addr">📍 <b style="color:#fff">다올105학원</b> · <a href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">경기도 하남시 미사강변대로 226번안길 35, 4층</a><span class="tags">중3~재수생 전 학년 · 국·수·영·과 반 개강 · 대치동 현장 강사 직강</span></p>
+      <p class="hours">🕑 상담 시간 : 평일 오후 2시 ~ 9시</p>
+    </div>
+    <p class="pull" style="font-size:clamp(17px,3vw,22px);margin-top:30px"><span class="em">선착순 2석.</span> 지금 전화 한 통이 아이의 여름을 바꿉니다. 🎤</p>
+  </div>
+</section>
+
+<footer>© 2026 다올105학원 · 하남미사 입시 전문 · 대치동 현장 강사 직강 썸머스쿨</footer>
+
+<div class="sticky">
+  <a class="call" href="tel:031-699-8111">☎ 전화 상담 (2석)</a>
+  <a class="mapx" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 지도</a>
+</div>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
+  (function(){
+    var counters=document.querySelectorAll('.cnt');if(!counters.length)return;
+    function run(el){var to=parseFloat(el.getAttribute('data-to')),dec=parseInt(el.getAttribute('data-dec')||'0',10),start=null,dur=1400;
+      function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1),e=1-Math.pow(1-p,3);el.textContent=(to*e).toFixed(dec);if(p<1)requestAnimationFrame(step);else el.textContent=to.toFixed(dec);}
+      requestAnimationFrame(step);}
+    if(!('IntersectionObserver' in window)){counters.forEach(run);return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}});},{threshold:.5});
+    counters.forEach(function(c){io.observe(c);});
+  })();
+</script>
+</body>
+</html>
