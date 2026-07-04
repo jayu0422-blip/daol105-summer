@@ -133,6 +133,21 @@
   .diff h3{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:9px;line-height:1.4}
   .diff p{font-size:15px;color:#3d4763;line-height:1.7}.diff p b{color:var(--navy-soft)}
   .diff.wide{grid-column:1 / -1}
+  .op-list{display:grid;gap:12px;margin-top:30px}
+  .op{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-sm);font-size:15.5px;color:#3d4763;line-height:1.6}
+  .op b{color:var(--ink)}
+  .op-ic{flex:none;width:44px;height:44px;border-radius:12px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));display:flex;align-items:center;justify-content:center;font-size:22px}
+  .track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:26px}
+  .track{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+  .track::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .tt-tag{display:inline-block;font-size:12px;font-weight:800;color:#8a6a1e;background:var(--gold-soft);padding:5px 12px;border-radius:999px;margin-bottom:12px}
+  .track h3{font-size:20px;font-weight:800;color:var(--ink);margin-bottom:12px;line-height:1.35}
+  .track h3 span{display:block;font-size:13px;color:var(--muted);font-weight:700;margin-top:2px}
+  .track ul{list-style:none}
+  .track li{font-size:14.5px;color:#3d4763;line-height:1.6;padding:8px 0;border-top:1px dashed var(--line)}
+  .track li:first-child{border-top:none}
+  .track li .k{display:inline-block;min-width:40px;color:var(--gold);font-weight:800;margin-right:4px}
+  .track li b{color:var(--navy-soft);font-weight:800}
 
   /* team */
   .team-intro{text-align:center}
@@ -373,7 +388,7 @@
       <div class="vs-body">
         <div class="vsrow"><div class="vs-crit">점검 주기</div><div class="vs-cells">
           <div class="vc other"><span class="x">✕</span>주 1회 '주간' 플래너 점검</div>
-          <div class="vc daol"><span class="v">✓</span><b>매일</b> 담임 검사 + <b>당일</b> 피드백</div></div></div>
+          <div class="vc daol"><span class="v">✓</span><b>매일</b> 담임 확인 + <b>주간 리포트</b></div></div></div>
         <div class="vsrow"><div class="vs-crit">강사진</div><div class="vs-cells">
           <div class="vc other"><span class="x">✕</span>인강(온·오프) 강사 중심</div>
           <div class="vc daol"><span class="v">✓</span><b>대치동 현장 강사</b> 직강 (前 시대인재·메가 러셀 출신)</div></div></div>
@@ -388,7 +403,7 @@
           <div class="vc daol"><span class="v">✓</span><b>하남미사 현장</b> (통학 시간 0)</div></div></div>
         <div class="vsrow"><div class="vs-crit">비용</div><div class="vs-cells">
           <div class="vc other"><span class="x">✕</span>4주 종합반 132만 원 + 예약금 + 자습관 별도</div>
-          <div class="vc daol"><span class="v">✓</span>방학 <b>59만→최대 39만</b> · 학기중 <b>39만→최대 19만</b></div></div></div>
+          <div class="vc daol"><span class="v">✓</span>관리형 독서실 방학 <b>59→39만</b> · 강의실 자기주도 <b>39→19만</b></div></div></div>
         <div class="vsrow"><div class="vs-crit">개강</div><div class="vs-cells">
           <div class="vc other"><span class="x">✕</span>7월 18일 — 아직 시작도 안 함</div>
           <div class="vc daol"><span class="v">✓</span><b>이미 개강 완료</b> (한 발 앞서 출발)</div></div></div>
@@ -419,7 +434,7 @@
       <div class="diff"><span class="num">1</span><h3>특강 과잉이 아니라 '균형'</h3><p><b>중3부터 재수생까지 전 학년</b>, 국어·수학·영어·과학 반이 <b>모두 개강</b>되어 있습니다. 인풋으로만 배 채우지 않고, 아이가 <b>직접 풀고·틀리고·고치는 자습 시간</b>을 반드시 확보합니다. 🎵 직접 부를 시간을 지켜드립니다.</p></div>
       <div class="diff"><span class="num">2</span><h3>대치동 '현장 강사' 직강</h3><p>인강 화면 속 강사가 아닙니다. <b>대치동에서 실제로 강의하는 현장 강사가 하남으로 직접</b> 옵니다. 내신에서 멈추지 않고 <b>수능까지</b> 하나의 흐름으로 커버합니다.</p></div>
       <div class="diff"><span class="num">3</span><h3>'하남 학교'를 문항 단위로 분석</h3><p>하남 각 학교의 내신 출제 성향을 <b>문항 하나하나 단위로 분석</b>하고 <b>학교별 동형 모의고사를 자체 제작</b>. 우리 아이가 실제로 보는 그 시험에 정조준합니다.</p></div>
-      <div class="diff"><span class="num">4</span><h3>'형식'이 아니라 '실질' 담임</h3><p>주 1회가 아닙니다. <b>소수 전담 담임이 매일 플래너를 검사하고 그날 바로 피드백.</b> 월요일에 막히면 월요일에 잡아드립니다. <b>대치 원서 컨설턴트 상주</b>로 입시 설계까지.</p></div>
+      <div class="diff"><span class="num">4</span><h3>'형식'이 아니라 '실질' 담임</h3><p>주 1회가 아닙니다. <b>소수 전담 담임이 매일 플래너를 확인</b>하고, 밸런스·공부법이 아쉬우면 바로 코멘트합니다. 일주일 치를 모아 <b>학부모께 리포트로 발송</b>. 강제가 아니라 스스로 방향을 잡게 돕는 구조죠. <b>대치 원서 컨설턴트 상주</b>로 입시 설계까지.</p></div>
       <div class="diff wide"><span class="num">5</span><h3>휴대폰 없는 몰입 환경</h3><p>입실 → <b>휴대폰 의무 제출(예외 없음)</b> → 플래너 작성 → 학습 시작. 지정좌석, 벌점 누적 시 퇴관(3회 경고 후 학생·학부모 면담, 5회 경고 시 퇴관). "관리한다"는 말이 아니라, 아이가 실제로 <b>오래 몰입하게 만드는 구조</b>입니다.</p></div>
     </div>
   </div>
@@ -459,6 +474,50 @@
       <div class="member"><div class="photo-wrap"><span class="ph"><span class="sil">👤</span>사진 준비 중</span><img src="img/teacher-6.jpg" alt="윤재영 대표원장" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=this.src.replace('.jpg','.png');}else{this.style.display='none';}"></div><div class="m-body"><span class="m-role">대표원장</span><div class="m-name">윤재영 <span>대표원장</span></div><div class="m-cred"><b>다올105 대표원장</b><br />前 메가스터디 러셀 영어 · 前 형설학원 고등부 팀장</div></div></div>
     </div>
     <p class="team-foot narrow">※ 사진을 교체하려면 <b>img</b> 폴더의 teacher-1~7 파일을 바꾸면 됩니다.</p>
+  </div>
+</section>
+
+<!-- 운영 · 2트랙 -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">여름을, 이렇게 '설계'해 드립니다</p>
+      <h2 class="sec">수업만 듣고 흩어지는 여름이 아닙니다<br />아침부터 밤까지, 하루를 관리합니다</h2>
+      <p class="lead">혼자서는 안 나가게 되니 PT로 환경을 사는 것처럼 — 나올 수밖에, 제대로 할 수밖에 없는 환경을 만듭니다.</p>
+    </div>
+    <div class="op-list narrow">
+      <div class="op"><div class="op-ic">⏰</div><div><b>아침에 시작하는 여름</b> — 오전 10시 등원 필수(원하면 9시부터). 늦잠으로 오전을 통째로 버리지 않고, 고1 생활 리듬을 몸에 새깁니다.</div></div>
+      <div class="op"><div class="op-ic">📚</div><div><b>모든 과목 자기주도</b> — 국·수·영·과 무엇이든 아이에게 필요한 과목을 자유롭게 공부합니다.</div></div>
+      <div class="op"><div class="op-ic">📝</div><div><b>매일 플래너 → 주간 리포트 → 담임 피드백(권장)</b> — 매일 쓰고 제출하면 담임이 확인, 일주일 치를 모아 리포트로 보내드리고 밸런스·공부법을 코멘트합니다. 강제가 아니라 스스로 방향을 잡게 돕습니다.</div></div>
+      <div class="op"><div class="op-ic">🤝</div><div><b>주간 필수 자습시간은 담임과 함께</b> — 무조건 다 채우는 게 아니라 아이에게 필요한 만큼. <b>일요일은 상담 후 넣거나 뺄 수 있어요.</b> 부담 없이 시작하셔도 됩니다.</div></div>
+      <div class="op"><div class="op-ic">🎯</div><div><b>입반 전 담임 인터뷰(30분~1시간)</b> — 한 철 반짝이 아니라 습관과 '효능감'을 남기기 위해, 목표와 자습 설계를 함께 정하고 시작합니다.</div></div>
+    </div>
+    <blockquote class="tip narrow"><b>다른 학원을 병행해도 괜찮습니다 — 단, '빈 시간'은 지켜드립니다.</b> 등원 시간을 담임과 공유하면 다녀온 뒤 자습에 복귀합니다. 다만 솔직히, 관리의 촘촘함은 아이의 공부가 <b>다올105 안에서</b> 이뤄질 때 확연히 좋아집니다. '보충 간다'던 시간이 실제로 어떻게 쓰이는지는 문 밖을 나서는 순간 아무도 볼 수 없으니까요 — <b>빈 시간은 원래 새기 마련</b>입니다. 타 학원은 열어두되, 가능한 시간은 다올105 안에서 관리받도록 함께 설계하시길 권합니다.</blockquote>
+    <div class="track-grid">
+      <div class="track">
+        <div class="tt-tag">트랙 1 · 고등부</div>
+        <h3>관리형 독서실 <span>완전 개인석</span></h3>
+        <ul>
+          <li><span class="k">대상</span> 고등부 (중3 참여 가능)</li>
+          <li><span class="k">공간</span> 완전 개인석 — 독립된 내 자리에서 몰입</li>
+          <li><span class="k">시간</span> 오전 10시(9시 선택) ~ 밤 10시 · 토·일 운영(조율)</li>
+          <li><span class="k">특징</span> 인터뷰 후 <b>2학기 연속 시 우선 배정</b></li>
+          <li><span class="k">비용</span> 방학 <b>59→최대 39만</b> · 학기중 <b>39→최대 19만</b></li>
+        </ul>
+      </div>
+      <div class="track">
+        <div class="tt-tag">트랙 2 · 중3 프리</div>
+        <h3>강의실 자기주도 관리 <span>파티션 + 개인서랍</span></h3>
+        <ul>
+          <li><span class="k">대상</span> 중3 (예비 고1)</li>
+          <li><span class="k">공간</span> 파티션+개인서랍 — '관리형 야간 자율학습' 개념</li>
+          <li><span class="k">시간</span> 주중 10~18시 · 토 10~22시 · <b>일 휴무</b></li>
+          <li><span class="k">특징</span> <b>고1의 벽을 여름에 미리</b> 넘습니다</li>
+          <li><span class="k">비용</span> 방학 기간 <b>39→최대 19만</b></li>
+        </ul>
+      </div>
+    </div>
+    <p class="compare-note narrow" style="text-align:center">※ 두 트랙 모두 공통 운영 시스템은 동일합니다. 교과목 수강 시 과목당 5만원씩 할인.</p>
   </div>
 </section>
 
@@ -509,9 +568,10 @@
       </div>
       <div class="price hi">
         <div class="p-cap">다올105 썸머스쿨</div>
-        <div class="rowline"><span class="rl">📅 방학 (7·8월)</span><span class="rv"><span class="was">59만</span>최대 39만 원</span></div>
-        <div class="rowline"><span class="rl">📚 학기중</span><span class="rv"><span class="was">39만</span>최대 19만 원</span></div>
-        <div class="p-sub" style="margin-top:10px">자습관 기준 · <b style="color:var(--gold-bright)">교과목 수강 시 과목당 5만 원 할인</b><br />하남미사 현장 · 매일 관리 · 우리 학교 정조준</div>
+        <div class="rowline"><span class="rl">① 관리형 독서실 · 방학</span><span class="rv"><span class="was">59</span>최대 39만</span></div>
+        <div class="rowline"><span class="rl">　└ 학기중</span><span class="rv"><span class="was">39</span>최대 19만</span></div>
+        <div class="rowline"><span class="rl">② 강의실 자기주도 · 방학</span><span class="rv"><span class="was">39</span>최대 19만</span></div>
+        <div class="p-sub" style="margin-top:10px"><b style="color:var(--gold-bright)">교과목 수강 시 과목당 5만 원씩 할인</b><br />하남미사 현장 · 매일 관리 · 우리 학교 정조준</div>
       </div>
     </div>
   </div>
@@ -525,6 +585,10 @@
     <div class="faq">
       <details class="qa"><summary><span class="qmk">Q</span>몇 학년까지 다닐 수 있나요? 어떤 과목이 열려 있나요?<span class="chev">⌄</span></summary><div class="a"><b>중3부터 재수생까지 전 학년</b>이 수강 가능하며, 전 학년 모두 <b>국어·수학·영어·과학 반이 개강</b>되어 있습니다. 필요한 과목을 균형 있게 들으면서 자습 시간까지 확보합니다.</div></details>
       <details class="qa"><summary><span class="qmk">Q</span>이미 개강했는데 지금 들어가도 따라갈 수 있나요?<span class="chev">⌄</span></summary><div class="a">네. 소수 전담이라 담임이 <b>첫날부터 개별 진도를 파악해 맞춰</b> 드립니다. 오히려 '아직 개강도 안 한' 대형학원보다 <b>이미 앞서 출발</b>하시는 셈입니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>몇 시부터 몇 시까지 하나요?<span class="chev">⌄</span></summary><div class="a"><b>고등부(관리형 독서실)</b>는 오전 10시 등원 필수(원하면 9시부터)~밤 10시, 토·일도 운영합니다. <b>중3 프리(강의실 자기주도)</b>는 주중 오전 10시~오후 6시, 토요일 오전 10시~밤 10시, 일요일은 휴무입니다. 주간 자습 시간과 일요일 참여는 담임과 조율합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>일요일에도 꼭 나와야 하나요?<span class="chev">⌄</span></summary><div class="a">아니요. 아이에게 필요한 '주간 필수 자습시간'을 담임과 함께 정하고, <b>일요일은 상담 후 넣거나 뺄 수 있습니다.</b> 부담 없이 시작하셔도 됩니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>다른 학원을 같이 다녀도 되나요?<span class="chev">⌄</span></summary><div class="a">됩니다. 등원 시간을 담임과 미리 공유하면, 다녀온 뒤 다시 자습에 복귀합니다. 다만 관리의 촘촘함은 다올105 안에서 이뤄질 때 확연히 좋아지므로, 가능한 시간은 내부에서 관리받으시길 권합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>'관리형 독서실'과 '강의실 자기주도'는 뭐가 다른가요?<span class="chev">⌄</span></summary><div class="a">관리형 독서실(고등부)은 <b>완전 개인석</b>에서 종일 몰입하는 형태, 강의실 자기주도(중3 프리)는 <b>파티션+개인서랍</b> 자리에서 진행하는 '관리형 야간 자율학습' 개념입니다. 운영 시스템(플래너·담임 관리)은 동일하고 공간·시간·비용만 다릅니다.</div></details>
       <details class="qa"><summary><span class="qmk">Q</span>특강을 많이 안 듣는 게 불안한데요.<span class="chev">⌄</span></summary><div class="a">그 불안이 바로 <b>'특강 쇼핑'의 함정</b>입니다. 수업을 많이 보는 것과 성적이 오르는 것은 다릅니다. 위 사례의 장O석 학생은 <b>두 과목만 듣고 1등급</b>을 받았습니다. 실력은 강의 개수가 아니라 '내가 푼 양'에서 나옵니다.</div></details>
       <details class="qa"><summary><span class="qmk">Q</span>정말 대치동 강사가 오나요?<span class="chev">⌄</span></summary><div class="a">네. 인강 강사가 아니라 <b>대치동에서 실제로 강의하는 현장 강사가 하남으로 직접 와 직강</b>합니다. 대치권에서 실제로 가르쳐 온 실력파 강사진이 내신부터 수능까지 커버합니다.</div></details>
       <details class="qa"><summary><span class="qmk">Q</span>우리 아이 학교 내신도 대비되나요?<span class="chev">⌄</span></summary><div class="a">다올105의 핵심 강점입니다. 하남 각 학교 출제 성향을 <b>문항 단위로 분석</b>하고 <b>학교별 동형 모의고사를 자체 제작</b>해 대비합니다.</div></details>
